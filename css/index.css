@@ -459,9 +459,16 @@ footer {
 .container .about-info h2 {
   color: #FFFAFA;
   padding-bottom: 1rem;
+  letter-spacing: 0.1rem;
 }
 .container .about-info h4 {
   color: #FF7F50;
+  padding-bottom: 1rem;
+  font-style: italic;
+}
+.container .about-info p {
+  color: #FFFAFA;
+  letter-spacing: 0.1rem;
 }
 .container .our-team {
   color: #FF7F50;
@@ -494,6 +501,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-left: 2rem;
 }
 .container .team-member .github-icon {
   width: 10%;

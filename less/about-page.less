@@ -43,10 +43,18 @@
   h2 {
     color: @Snow;
     padding-bottom: 1rem;
+    letter-spacing: .1rem;
   }
 
   h4 {
     color: @Coral;
+    padding-bottom: 1rem;
+    font-style: italic;
+  }
+
+  p {
+    color: @Snow;
+    letter-spacing: .1rem;
   }
 }
 
@@ -84,6 +92,7 @@
 .team-member {
   display: flex;
   .layout(space-between, center);
+  margin-left: 2rem;
 
   .github-icon {
     width: 10%;
@@ -100,13 +109,6 @@
   border-left: dotted .1rem @Darknavy;
   border-right: dotted .1rem @Darknavy;
 
-  // .team-img {
-  //   width: 20%;
-  // }
-
-  // .github-icon {
-  //   width: 5%;
-  // }
 }
 .team-2 {
   padding: 2rem;
