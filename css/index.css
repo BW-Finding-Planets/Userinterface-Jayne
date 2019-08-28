@@ -506,8 +506,8 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-left: solid 0.25rem #242943;
-  border-right: solid 0.25rem #242943;
+  border-left: dotted 0.1rem #242943;
+  border-right: dotted 0.1rem #242943;
 }
 .container .team-2 {
   padding: 2rem;
@@ -517,9 +517,9 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-left: solid 0.25rem #242943;
-  border-right: solid 0.25rem #242943;
-  border-bottom: solid 0.5rem #242943;
+  border-left: dotted 0.1rem #242943;
+  border-right: dotted 0.1rem #242943;
+  border-bottom: dotted 0.1rem #242943;
 }
 .container .team-gray {
   padding: 2rem;
@@ -530,8 +530,8 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-left: solid 0.25rem #242943;
-  border-right: solid 0.25rem #242943;
+  border-left: dotted 0.1rem #242943;
+  border-right: dotted 0.1rem #242943;
 }
 .container .team-gray .job {
   color: #FFFAFA;
