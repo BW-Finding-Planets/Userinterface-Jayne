@@ -195,10 +195,18 @@ footer {
   display: flex;
 }
 @media (max-width: 500px) {
+  .container .intro div h1 {
+    font-size: 3rem;
+  }
+  .container .intro div h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
   .container .intro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
   }
@@ -240,17 +248,13 @@ footer {
   }
 }
 .container .CTA-box {
-  background-color: #696969;
+  background-color: #242943;
 }
 @media (max-width: 500px) {
-  .container .CTA-box {
-    padding-top: 2rem;
-    border: solid 0.2rem #242943;
-  }
   .container .CTA-box .h2-box {
     order: 0;
     width: 75%;
-    padding: 1rem 0rem 2rem 2rem;
+    padding: 1rem 0rem 0rem 2rem;
   }
   .container .CTA-box .CTA-button {
     order: 1;
@@ -285,8 +289,9 @@ footer {
 }
 @media (max-width: 500px) {
   .container .h2-box {
-    background-color: #696969;
+    background-color: #242943;
     display: flex;
+    flex-direction: column;
     position: relative;
     bottom: 0rem;
     left: 0rem;
@@ -294,7 +299,7 @@ footer {
   }
   .container .h2-box h2 {
     color: #FFFAFA;
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 }
 .container .CTA-button {
@@ -334,18 +339,25 @@ footer {
   padding: 3rem;
   border: dotted 0.1rem #242943;
 }
+.container .one-click h3 {
+  color: #FFFAFA;
+  letter-spacing: 0.15rem;
+  padding-bottom: 1rem;
+}
 .container .one-click h4 {
   color: #696969;
 }
 .container .benefits {
-  background-color: #242943;
+  background-image: url("/images/star-background.jpg");
   color: #FFFAFA;
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 0 2rem 3rem 4rem;
 }
 @media (max-width: 500px) {
   .container .benefits {
-    background-color: #242943;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -354,12 +366,12 @@ footer {
 }
 .container .benefits-boxes {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  text-align: center;
-  color: #FFFAFA;
+  text-align: left;
+  color: #696969;
   padding: 2rem;
 }
 @media (max-width: 500px) {
@@ -373,15 +385,31 @@ footer {
   }
 }
 .container .benefits-boxes .benefits-cta {
-  color: #FF7F50;
+  color: #FFFAFA;
 }
 .container .benefits-boxes .benefits-img {
-  width: 50%;
+  width: 20%;
 }
 @media (max-width: 500px) {
   .container .benefits-boxes .benefits-img {
-    width: 40%;
+    width: 30%;
   }
+}
+.container .benefits-boxes h5 {
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+}
+@media (max-width: 500px) {
+  .container .benefits-boxes h5 {
+    padding: 1rem 0rem;
+  }
+}
+.container .benefits-boxes p {
+  font-size: 1.5rem;
+}
+.container #box-2 {
+  display: flex;
+  flex-direction: row-reverse;
 }
 .container img {
   width: 100%;
@@ -417,6 +445,7 @@ footer {
   padding: 1.5rem;
 }
 .container .about-info {
+  background-image: url("/images/benefits-boxes-background.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -424,8 +453,8 @@ footer {
   flex-wrap: wrap;
   text-align: center;
   background-color: #242943;
-  border: dotted 0.15rem #242943;
-  padding: 2rem;
+  border: dotted 0.1rem #242943;
+  padding: 3rem 0rem;
 }
 .container .about-info h2 {
   color: #FFFAFA;
@@ -435,7 +464,6 @@ footer {
   color: #FF7F50;
 }
 .container .our-team {
-  background-color: #696969;
   color: #FF7F50;
   display: flex;
   flex-direction: column;
@@ -443,8 +471,8 @@ footer {
   align-items: center;
   text-align: center;
   padding: 1.5rem 5rem;
-  border-left: solid 0.25rem #242943;
-  border-right: solid 0.25rem #242943;
+  border-left: dotted 0.1rem #242943;
+  border-right: dotted 0.1rem #242943;
 }
 .container .our-team h3 {
   color: #FFFAFA;
@@ -575,7 +603,6 @@ footer {
   padding: 1rem 1.5rem;
 }
 .container .testimonials {
-  background-image: url("/images/about-page-image.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -586,7 +613,6 @@ footer {
   margin: 1rem auto;
   padding: 5rem;
   height: auto;
-  background-color: #242943;
   color: #FFFAFA;
   border: 0.1rem dashed #FF7F50;
 }

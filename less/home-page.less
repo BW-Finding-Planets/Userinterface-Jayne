@@ -8,11 +8,19 @@
 
     div {
       display:flex;
+      @media @mobile {
+        h1 {
+          font-size: 3rem;       
+         }
+        h2 {
+          font-size: 2.5rem;       
+         }
+      }
     }
 
     @media @mobile {
       display: flex;
-      .column(center, center);
+      .column(space-evenly, center);
       padding: 1rem;
     }
   
@@ -55,18 +63,13 @@
   }
 
   .CTA-box {
-
-    background-color: @Dimgray;
+    background-color: @Darknavy;
     
-
     @media @mobile {
-      padding-top: 2rem;
-      border: solid .2rem @Darknavy;
-      
       .h2-box{
         order: 0;
         width: 75%;
-        padding: 1rem 0rem 2rem 2rem;
+        padding: 1rem 0rem 0rem 2rem;
       }
       
       .CTA-button {
@@ -80,7 +83,6 @@
         position: relative;
         bottom: 4rem;
         right: 2.5rem;
-
         }
       }
     }
@@ -102,8 +104,9 @@
       }
 
       @media @mobile {
-        background-color: @Dimgray;
+        background-color: @Darknavy;
         display: flex;
+        flex-direction: column;
         position: relative;
         bottom: 0rem;
         left: 0rem;
@@ -111,7 +114,7 @@
 
         h2 {
           color: @Snow;
-          font-size: 2.25rem;
+          font-size: 2rem;
           }
         }
       }
@@ -142,19 +145,26 @@
     padding: 3rem;
     border: dotted .1rem @Darknavy;
 
+    h3 {
+      color: @Snow;
+      letter-spacing: .15rem;
+      padding-bottom: 1rem;
+    }
+
     h4 {
       color: @Dimgray;
     }
   }
 
   .benefits {
-    background-color: @Darknavy;
+    background-image: url("/images/star-background.jpg");
     color: @Snow;
     display: flex;
+    .column(space-evenly, center);
     padding: 0 2rem 3rem 4rem;
 
     @media @mobile {
-      background-color: @Darknavy;
+      // background-color: @Darknavy;
       display: flex;
       .column(flex-start, center);
     }
@@ -163,10 +173,10 @@
 
   .benefits-boxes {
     display: flex;
-    .column(space-around, center);
+    .layout(space-around, center);
     flex-wrap: wrap;
-    text-align: center;
-    color: @Snow;
+    text-align: left;
+    color: @Dimgray;
     padding: 2rem;
 
     @media @mobile {
@@ -177,16 +187,32 @@
     }
     
     .benefits-cta {
-      color: @Coral;
+      color: @Snow;
     }
 
     .benefits-img {
-      width: 50%;
-
+      width: 20%;
       @media @mobile {
-      width: 40%;
+      width: 30%;
       }
     } 
+
+    h5 {
+      font-size: 2rem;
+      letter-spacing: .15rem;
+      @media @mobile {
+        padding: 1rem 0rem;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  #box-2 {
+    display: flex;
+    flex-direction: row-reverse;
   }
 
   img {
