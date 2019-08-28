@@ -130,6 +130,7 @@ table {
   box-sizing: border-box;
 }
 html {
+  background-color: #040416;
   font-size: 62.5%;
 }
 html,
@@ -574,6 +575,7 @@ footer {
   padding: 1rem 1.5rem;
 }
 .container .testimonials {
+  background-image: url("/images/about-page-image.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
