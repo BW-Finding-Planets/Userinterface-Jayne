@@ -1,0 +1,198 @@
+.container {
+
+  .intro {
+    background-color: @Darknavy;
+    display: flex;
+    .layout(space-between, baseline);
+    color: @Snow;
+
+    div {
+      display:flex;
+    }
+
+    @media @mobile {
+      display: flex;
+      .column(center, center);
+      padding: 1rem;
+    }
+  
+    h1 {
+      color: @Snow;
+      padding:1rem 1.5rem;
+      text-decoration: none;
+    }
+    @media @mobile {
+      padding: 1.5rem;
+    }
+    
+    h2 {
+      padding: 1.5rem;
+    }
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+
+    #img1 {
+      width: 100%;
+      height: auto;
+      display:block;
+
+      @media @mobile {
+        display: none;
+      }
+    }
+
+    #img2 {
+      display:none;
+
+      @media @mobile {
+        display: block;
+      }
+    }
+  }
+
+  .CTA-box {
+
+    background-color: @Dimgray;
+    
+
+    @media @mobile {
+      padding-top: 2rem;
+      border: solid .2rem @Darknavy;
+      
+      .h2-box{
+        order: 0;
+        width: 75%;
+        padding: 1rem 0rem 2rem 2rem;
+      }
+      
+      .CTA-button {
+        order: 1;
+        width: 25%;
+        padding: .5rem;
+        font-size: .5rem;
+        text-decoration: none;
+        .ctabutton();
+        cursor: pointer;
+        position: relative;
+        bottom: 4rem;
+        right: 2.5rem;
+
+        }
+      }
+    }
+
+    .h2-box {
+      background-color: @Darknavy;
+      color: @Snow;
+      font-size: 2.5rem;
+      position: absolute;
+      bottom: 2.5rem;
+      left: 2.5rem;
+      padding: 1rem;
+      border: solid .2rem @Darknavy;
+      opacity: 0.8;
+
+      h2 {
+        color: @Snow;
+        letter-spacing: .2rem;
+      }
+
+      @media @mobile {
+        background-color: @Dimgray;
+        display: flex;
+        position: relative;
+        bottom: 0rem;
+        left: 0rem;
+        border: none;
+
+        h2 {
+          color: @Snow;
+          font-size: 2.25rem;
+          }
+        }
+      }
+
+    .CTA-button {
+      display: flex;
+      .layout(center, center);
+      width: 28%;
+      padding: 1rem;
+      font-size: 1.75rem;
+      text-decoration: none;
+      .ctabutton();
+      .transition();
+      cursor: pointer;
+      position: absolute;
+      top: 85%;
+      left: 70%;
+
+      @media @mobile {
+        font-size: .5rem;
+        .ctabutton();
+        }
+      
+    }
+
+  .one-click {
+    text-align: center;
+    padding: 3rem;
+    border: dotted .1rem @Darknavy;
+
+    h4 {
+      color: @Dimgray;
+    }
+  }
+
+  .benefits {
+    background-color: @Darknavy;
+    color: @Snow;
+    display: flex;
+    padding: 0 2rem 3rem 4rem;
+
+    @media @mobile {
+      background-color: @Darknavy;
+      display: flex;
+      .column(flex-start, center);
+    }
+  }
+
+
+  .benefits-boxes {
+    display: flex;
+    .column(space-around, center);
+    flex-wrap: wrap;
+    text-align: center;
+    color: @Snow;
+    padding: 2rem;
+
+    @media @mobile {
+      display: flex;
+      color: @Snow;
+      flex-wrap: wrap;
+      .layout(space-around, center);
+    }
+    
+    .benefits-cta {
+      color: @Coral;
+    }
+
+    .benefits-img {
+      width: 50%;
+
+      @media @mobile {
+      width: 40%;
+      }
+    } 
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+
+}

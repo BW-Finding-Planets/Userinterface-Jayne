@@ -1,0 +1,64 @@
+.how {
+  display: flex;
+  .column(space-around, center);
+  flex-wrap: wrap;
+  text-align: center;
+  border-left: dotted .15rem @Darknavy;
+  border-right: dotted .15rem @Darknavy;
+  padding: 2rem;
+
+  h2 {
+    padding-bottom: 1rem;
+    }
+}
+
+.howTo {
+  background-image: url("/images/about-page-image.jpg");
+  display: flex;
+  .layout(flex-start, center);
+  padding: 1rem 1.5rem;
+
+  h3 {
+    color: @Snow;
+  }
+
+  p {
+    color: @Coral;
+  }
+
+  .howToColumn {
+    background-color: @Darknavy;
+    opacity: 0.9;
+    display: flex;
+    .column(center, center);
+  }
+
+  .howToIcons {
+    width: 10%;
+  }
+}
+
+.findOutMore {
+  display: flex;
+  .column(space-around, center);
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: @Dimgray;
+  color: @Snow;
+  border-left: dotted .15rem @Darknavy;
+  border-right: dotted .15rem @Darknavy;
+  padding: 2rem;
+
+    h3 {
+      color: @Snow;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    }
+
+  a {
+    font-size: 1.8rem;
+    color: @Coral;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+  }
+}

@@ -1,0 +1,133 @@
+.container {
+
+  .about-intro {
+  background-color: @Darknavy;
+  display: flex;
+  .layout(space-between, center);
+  color: @Snow;
+  text-decoration: none;
+
+  div {
+    display:flex;
+  }
+
+
+  @media @mobile {
+    display: flex;
+    .column(center, center);
+    padding: 1rem;
+
+  }
+
+  h1 {
+    color: @Snow;
+    padding:1rem 1.5rem;
+    text-decoration: none;
+  }
+  
+  h2 {
+    padding: 1.5rem;
+  }
+}
+
+.about-info {
+  display: flex;
+  .column(space-around, center);
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: @Darknavy;
+  border: dotted .15rem @Darknavy;
+  padding: 2rem;
+
+  h2 {
+    color: @Snow;
+    padding-bottom: 1rem;
+  }
+
+  h4 {
+    color: @Coral;
+  }
+}
+
+.our-team {
+  background-color: @Dimgray;
+  color: @Coral;
+  display: flex;
+  .column(center, center);
+  text-align: center;
+  padding: 1.5rem 5rem;
+  border-left: solid .25rem @Darknavy;
+  border-right: solid .25rem @Darknavy;
+  // border-top: solid .25rem @Darknavy;
+
+  h3 {
+    color: @Snow;
+  }
+
+  h4 {
+    color: @Coral;
+  }
+}
+
+.team-img {
+  width: 35%;
+}
+
+.title {
+  color: @Coral;
+}
+
+.job {
+  color: @Darknavy;
+}
+
+.team-member {
+  display: flex;
+  .layout(space-between, center);
+
+  .github-icon {
+    width: 10%;
+  }
+}
+
+.teamTess {
+  padding: 2rem;
+  background-color: @Snow;
+  display: flex;
+  .layout(center, center);
+  text-align: center;
+  border-left: solid .25rem @Darknavy;
+  border-right: solid .25rem @Darknavy;
+}
+.team-2 {
+  padding: 2rem;
+  background-color: @Snow;
+  display: flex;
+  .layout(center, center);
+  text-align: center;
+  border-left: solid .25rem @Darknavy;
+  border-right: solid .25rem @Darknavy;
+  border-bottom: solid .5rem @Darknavy;
+
+}
+
+.team-gray {
+padding: 2rem;
+background-color: @Dimgray;
+color: @Snow;
+display: flex;
+.layout(center, center);
+text-align: center;
+border-left: solid .25rem @Darknavy;
+border-right: solid .25rem @Darknavy;
+
+  .job {
+  color: @Snow;
+  }
+
+  h4 {
+  color: @Snow;
+  }
+}
+
+}
