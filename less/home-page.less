@@ -1,0 +1,317 @@
+.container {
+
+  .intro {
+    background-color: @Darknavy;
+    display: flex;
+    .layout(space-between, baseline);
+    color: @Snow;
+
+    @media @tablet {
+      background-color: @Darknavy;
+      color: @Darknavy;
+      h2 {
+        color: @Snow;
+      }
+    }
+
+    @media @mobile {
+      h2 {
+        color: @Dimgray;
+      }
+    }
+
+    div {
+      display:flex;
+      @media @mobile {
+        h1 {
+          font-size: 3rem;       
+         }
+        h2 {
+          font-size: 2.5rem;       
+         }
+      }
+    }
+
+    @media @mobile {
+      display: flex;
+      .column(space-evenly, center);
+      padding: 1rem;
+    }
+  
+    h1 {
+      color: @Snow;
+      padding:1rem 1.5rem;
+      text-decoration: none;
+      @media @tablet {
+        color: @Coral;
+        }   
+      @media @mobile {
+      padding: 1.5rem;
+        }
+      }
+    
+    h2 {
+      padding: 1.5rem;
+    }
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+
+    #img1 {
+      width: 100%;
+      height: auto;
+      display:block;
+
+      @media @tablet {
+        display: block;
+      }
+
+      @media @mobile {
+        display: none;
+      }
+
+    }
+
+    #img2 {
+      display:none;
+
+      @media @tablet {
+        display: none;
+      }
+
+      @media @mobile {
+        display: block;
+      }
+    }
+  }
+
+  .animate-h2 {
+    animation-name: text-shadow-pop-top;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+
+  }
+
+  .CTA-box {
+    background-color: @Darknavy;
+    @media @tablet {
+      .h2-box {
+        background-color: darken(@Dimgray, 20%);
+        border: none;
+      }
+    } 
+    @media @mobile {
+      .h2-box{
+        background-color: @Darknavy;
+        order: 0;
+        width: 75%;
+        padding: 1rem 0rem 0rem 2rem;
+      }
+      
+      .CTA-button {
+        order: 1;
+        width: 25%;
+        padding: .5rem;
+        font-size: .5rem;
+        text-decoration: none;
+        .ctabutton();
+        cursor: pointer;
+        position: relative;
+        bottom: 4rem;
+        right: 2.5rem;
+        }
+      }
+    }
+
+    .h2-box {
+      background-color: @Darknavy;
+      color: @Snow;
+      font-size: 2.5rem;
+      position: absolute;
+      bottom: 2.5rem;
+      left: 2.5rem;
+      padding: 1rem;
+      border: solid .2rem @Darknavy;
+      opacity: 0.8;
+
+      h2 {
+        color: @Snow;
+        letter-spacing: .2rem;
+      }
+
+      @media @mobile {
+        background-color: @Darknavy;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 0rem;
+        left: 0rem;
+        border: none;
+
+        h2 {
+          color: @Snow;
+          font-size: 2rem;
+          }
+        }
+      }
+
+    .CTA-button {
+      display: flex;
+      .layout(center, center);
+      width: 28%;
+      padding: 1rem;
+      font-size: 1.75rem;
+      text-decoration: none;
+      .ctabutton();
+      .transition();
+      cursor: pointer;
+      position: absolute;
+      top: 85%;
+      left: 70%;
+
+      @media @tablet {
+        background-color: @Darknavy;
+      }
+
+      @media @mobile {
+        font-size: .5rem;
+        .ctabutton();
+        }
+      
+    }
+
+  .one-click {
+    text-align: center;
+    padding: 3rem;
+    border: dotted .1rem @Darknavy;
+
+    h3 {
+      color: @Snow;
+      letter-spacing: .15rem;
+      padding-bottom: 1rem;
+
+      @media @tablet {
+        font-size: 3rem;
+      }
+    }
+
+    h4 {
+      color: @Dimgray;
+      @media @tablet {
+        color: lighten(@Dimgray, 25%);
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .benefits {
+    background-image: url("/images/star-background.jpg");
+    color: @Snow;
+    display: flex;
+    .column(space-evenly, center);
+    padding: 0 2rem 3rem 4rem;
+
+    @media @mobile {
+      display: flex;
+      .column(flex-start, center);
+    }
+  }
+
+
+  .benefits-boxes {
+    display: flex;
+    .layout(space-around, center);
+    flex-wrap: wrap;
+    text-align: left;
+    color: lighten(@Dimgray, 25%);
+    padding: 2rem;
+
+    @media @mobile {
+      display: flex;
+      text-align: center;
+      color: lighten(@Dimgray, 20%);
+      flex-wrap: wrap;
+      .layout(space-around, center);
+    }
+    
+    .benefits-cta {
+      color: @Snow;
+      @media @tablet {
+        font-size: 2.4rem;
+        color: lighten(@Coral, 15%);
+      }
+    }
+
+    .benefits-img {
+      width: 20%;
+      @media @tablet {
+        width: 15%;
+      }
+      @media @mobile {
+      width: 30%;
+      }
+    } 
+
+    h5 {
+      font-size: 2rem;
+      letter-spacing: .15rem;
+      @media @mobile {
+        padding: 1rem 0rem;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      @media @tablet {
+        font-size: 1.8rem;
+        color: lighten(@Dimgray, 25%);
+      }
+    }
+  }
+
+  #box-1 {
+    @media @tablet {
+      display: flex;
+      flex-direction: row-reverse;
+    } 
+    @media @mobile {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  #box-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    @media @tablet {
+      display: flex;
+      flex-direction: row;
+    } 
+    @media @mobile {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  #box-3 {
+    @media @tablet {
+      display: flex;
+      flex-direction: row-reverse;
+    } 
+    @media @mobile {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+
+}

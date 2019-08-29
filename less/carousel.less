@@ -1,0 +1,71 @@
+.container {
+
+
+
+  .testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 1rem auto;
+    padding: 5rem;
+    height: auto;
+    color: @Snow;
+    border: .1rem dashed @Coral;
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    h5 {
+      color: @Dimgray;
+      font-size: 1.6rem;
+    }
+    
+
+    .left-button {
+      top: 50%;
+      left: 25px;
+      padding: 2px 0 0 10px;
+      transform: translate(0, -50%);
+      color: @Snow;
+      font-size: 3.5rem;
+      border-radius: 50%;
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      border: .25rem solid @Dimgray;
+      cursor: pointer;
+
+    }
+
+    .testimonial {
+      display: flex;
+      .column(space-around, center);
+      width: 60%;
+      text-align: center;
+    }
+
+    .right-button {
+      top: 50%;
+      right: 25px;
+      padding: 2px 0 0 12px;
+      transform: translate(0, -50%);
+      color: @Snow;
+      font-size: 3.5rem;
+      border-radius: 50%;
+      position: absolute;
+      width: 5rem;
+      height: 5rem;
+      border: .25rem solid @Dimgray;
+      cursor: pointer;
+
+    }
+    
+  }
+
+}
