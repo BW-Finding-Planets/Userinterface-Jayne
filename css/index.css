@@ -172,11 +172,21 @@ p {
 nav {
   background-color: #242943;
 }
+@media (max-width: 800px) {
+  nav {
+    background-color: #696969;
+  }
+}
 nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: #FF7F50;
   padding: 1rem 1.75rem;
+}
+@media (max-width: 800px) {
+  nav a {
+    font-size: 2rem;
+  }
 }
 footer {
   background-color: #242943;
@@ -190,6 +200,15 @@ footer {
   justify-content: space-between;
   align-items: baseline;
   color: #FFFAFA;
+}
+@media (max-width: 800px) {
+  .container .intro {
+    background-color: #696969;
+    color: #242943;
+  }
+  .container .intro h2 {
+    color: #242943;
+  }
 }
 .container .intro div {
   display: flex;
@@ -234,6 +253,12 @@ footer {
   height: auto;
   display: block;
 }
+@media (max-width: 800px) {
+  .container .image-container #img1 {
+    display: block;
+    height: 30vh;
+  }
+}
 @media (max-width: 500px) {
   .container .image-container #img1 {
     display: none;
@@ -241,6 +266,11 @@ footer {
 }
 .container .image-container #img2 {
   display: none;
+}
+@media (max-width: 800px) {
+  .container .image-container #img2 {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .container .image-container #img2 {
@@ -250,8 +280,15 @@ footer {
 .container .CTA-box {
   background-color: #242943;
 }
+@media (max-width: 800px) {
+  .container .CTA-box .h2-box {
+    background-color: #363636;
+    border: none;
+  }
+}
 @media (max-width: 500px) {
   .container .CTA-box .h2-box {
+    background-color: #242943;
     order: 0;
     width: 75%;
     padding: 1rem 0rem 0rem 2rem;
@@ -324,6 +361,11 @@ footer {
   color: #FFFAFA;
   background-color: #FF7F50;
 }
+@media (max-width: 800px) {
+  .container .CTA-button {
+    background-color: #242943;
+  }
+}
 @media (max-width: 500px) {
   .container .CTA-button {
     font-size: 0.5rem;
@@ -344,8 +386,19 @@ footer {
   letter-spacing: 0.15rem;
   padding-bottom: 1rem;
 }
+@media (max-width: 800px) {
+  .container .one-click h3 {
+    font-size: 3rem;
+  }
+}
 .container .one-click h4 {
   color: #696969;
+}
+@media (max-width: 800px) {
+  .container .one-click h4 {
+    color: #a9a9a9;
+    font-size: 1.8rem;
+  }
 }
 .container .benefits {
   background-image: url("/images/star-background.jpg");
@@ -371,13 +424,14 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   text-align: left;
-  color: #696969;
+  color: #a9a9a9;
   padding: 2rem;
 }
 @media (max-width: 500px) {
   .container .benefits-boxes {
     display: flex;
-    color: #FFFAFA;
+    text-align: center;
+    color: #9c9c9c;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
@@ -386,6 +440,12 @@ footer {
 }
 .container .benefits-boxes .benefits-cta {
   color: #FFFAFA;
+}
+@media (max-width: 800px) {
+  .container .benefits-boxes .benefits-cta {
+    font-size: 2.4rem;
+    color: #ffb79d;
+  }
 }
 .container .benefits-boxes .benefits-img {
   width: 20%;
@@ -407,9 +467,33 @@ footer {
 .container .benefits-boxes p {
   font-size: 1.5rem;
 }
+@media (max-width: 800px) {
+  .container .benefits-boxes p {
+    font-size: 1.8rem;
+    color: #a9a9a9;
+  }
+}
+@media (max-width: 800px) {
+  .container #box-1 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .container #box-2 {
   display: flex;
   flex-direction: row-reverse;
+}
+@media (max-width: 800px) {
+  .container #box-2 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 800px) {
+  .container #box-3 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 .container img {
   width: 100%;
@@ -423,6 +507,11 @@ footer {
   align-items: center;
   color: #FFFAFA;
   text-decoration: none;
+}
+@media (max-width: 800px) {
+  .container .about-intro {
+    background-color: #696969;
+  }
 }
 .container .about-intro div {
   display: flex;
@@ -443,6 +532,11 @@ footer {
 }
 .container .about-intro h2 {
   padding: 1.5rem;
+}
+@media (max-width: 800px) {
+  .container .about-intro h2 {
+    color: #242943;
+  }
 }
 .container .about-info {
   background-image: url("/images/benefits-boxes-background.jpg");
@@ -517,6 +611,14 @@ footer {
   border-left: dotted 0.1rem #242943;
   border-right: dotted 0.1rem #242943;
 }
+@media (max-width: 800px) {
+  .container .teamTess {
+    background-color: #696969;
+  }
+  .container .teamTess h4 {
+    color: #FFFAFA;
+  }
+}
 .container .team-2 {
   padding: 2rem;
   background-color: #FFFAFA;
@@ -528,6 +630,14 @@ footer {
   border-left: dotted 0.1rem #242943;
   border-right: dotted 0.1rem #242943;
   border-bottom: dotted 0.1rem #242943;
+}
+@media (max-width: 800px) {
+  .container .team-2 {
+    background-color: #696969;
+  }
+  .container .team-2 h4 {
+    color: #FFFAFA;
+  }
 }
 .container .team-gray {
   padding: 2rem;
@@ -541,11 +651,26 @@ footer {
   border-left: dotted 0.1rem #242943;
   border-right: dotted 0.1rem #242943;
 }
+@media (max-width: 800px) {
+  .container .team-gray {
+    background-color: #FFFAFA;
+  }
+}
 .container .team-gray .job {
   color: #FFFAFA;
 }
+@media (max-width: 800px) {
+  .container .team-gray .job {
+    color: #242943;
+  }
+}
 .container .team-gray h4 {
   color: #FFFAFA;
+}
+@media (max-width: 800px) {
+  .container .team-gray h4 {
+    color: #242943;
+  }
 }
 .how {
   display: flex;
@@ -554,37 +679,74 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  border-left: dotted 0.15rem #242943;
-  border-right: dotted 0.15rem #242943;
+  border-left: dotted 0.1rem #242943;
+  border-right: dotted 0.1rem #242943;
   padding: 2rem;
 }
 .how h2 {
+  letter-spacing: 0.4rem;
+  color: #FFFAFA;
   padding-bottom: 1rem;
 }
+.how h4 {
+  letter-spacing: 0.3rem;
+  color: #FF7F50;
+  padding-bottom: 1rem;
+}
+@media (max-width: 800px) {
+  .how h4 {
+    font-size: 1.6rem;
+  }
+}
+.how p {
+  color: #a9a9a9;
+}
 .howTo {
-  background-image: url("/images/about-page-image.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.howTo h5 {
+  color: #FFFAFA;
+  font-size: 1.8rem;
+  letter-spacing: 0.15rem;
+  padding-bottom: 1rem;
+}
+.howTo-boxes {
+  background-image: url("/images/benefits-boxes-background.jpg");
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 2rem;
 }
-.howTo h3 {
-  color: #FFFAFA;
+.howTo-boxes p {
+  font-size: 1.2rem;
+  color: #ffb79d;
 }
-.howTo p {
-  color: #FF7F50;
+@media (max-width: 800px) {
+  .howTo-boxes p {
+    font-size: 1.6rem;
+    color: #b5b5b5;
+  }
 }
-.howTo .howToColumn {
-  background-color: #242943;
-  opacity: 0.9;
+@media (max-width: 500px) {
+  .howTo-boxes p {
+    color: #ffb79d;
+  }
+}
+.howTo-boxes .howToColumn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.howTo .howToIcons {
-  width: 10%;
+.howTo-boxes .howToIcons {
+  width: 15%;
+}
+.howTo-boxes div {
+  padding: 2.5rem;
 }
 .findOutMore {
   display: flex;

@@ -3,38 +3,72 @@
   .column(space-around, center);
   flex-wrap: wrap;
   text-align: center;
-  border-left: dotted .15rem @Darknavy;
-  border-right: dotted .15rem @Darknavy;
+  border-left: dotted .1rem @Darknavy;
+  border-right: dotted .1rem @Darknavy;
   padding: 2rem;
 
   h2 {
+    letter-spacing: .4rem;
+    color: @Snow;
     padding-bottom: 1rem;
     }
+
+  h4 {
+    letter-spacing: .3rem;
+    color: @Coral;
+    padding-bottom: 1rem;
+    @media @tablet {
+      font-size: 1.6rem;
+    }
+    }
+  
+  p {
+    color: lighten(@Dimgray, 25%);
+  }
 }
 
 .howTo {
-  background-image: url("/images/about-page-image.jpg");
   display: flex;
-  .layout(flex-start, center);
-  padding: 1rem 1.5rem;
+  .column(space-around, center);
 
-  h3 {
+  h5 {
     color: @Snow;
+    font-size: 1.8rem;
+    letter-spacing: .15rem;
+    padding-bottom: 1rem;
   }
+}
+
+.howTo-boxes {
+  background-image: url("/images/benefits-boxes-background.jpg");
+  display: flex;
+  .layout(center, center);
+  padding: 2rem;
 
   p {
-    color: @Coral;
+    font-size: 1.2rem;
+    color: lighten(@Coral, 15%);
+    @media @tablet {
+      font-size: 1.6rem;
+      color: lighten(@Dimgray, 30%);
+    }
+    @media @mobile {
+      color: lighten(@Coral, 15%);
+    }
   }
 
+
   .howToColumn {
-    background-color: @Darknavy;
-    opacity: 0.9;
     display: flex;
     .column(center, center);
   }
 
   .howToIcons {
-    width: 10%;
+    width: 15%;
+  }
+
+  div {
+    padding: 2.5rem;
   }
 }
 

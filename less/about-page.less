@@ -7,6 +7,10 @@
   color: @Snow;
   text-decoration: none;
 
+  @media @tablet {
+    background-color: @Dimgray;
+  }
+
   div {
     display:flex;
   }
@@ -23,10 +27,14 @@
     color: @Snow;
     padding:1rem 1.5rem;
     text-decoration: none;
+    
   }
   
   h2 {
     padding: 1.5rem;
+    @media @tablet {
+      color: @Darknavy;
+    }
   }
 }
 
@@ -109,6 +117,13 @@
   border-left: dotted .1rem @Darknavy;
   border-right: dotted .1rem @Darknavy;
 
+  @media @tablet {
+    background-color: @Dimgray;
+    h4 {
+      color: @Snow;
+    }
+  }
+
 }
 .team-2 {
   padding: 2rem;
@@ -119,6 +134,13 @@
   border-left: dotted .1rem @Darknavy;
   border-right: dotted .1rem @Darknavy;
   border-bottom: dotted .1rem @Darknavy;
+
+  @media @tablet {
+    background-color: @Dimgray;
+    h4 {
+      color: @Snow;
+    }
+  }
 
 }
 
@@ -132,12 +154,22 @@ text-align: center;
 border-left: dotted .1rem @Darknavy;
 border-right: dotted .1rem @Darknavy;
 
+@media @tablet {
+  background-color: @Snow;
+}
+
   .job {
   color: @Snow;
+  @media @tablet {
+    color: @Darknavy;
+  }
   }
 
   h4 {
   color: @Snow;
+  @media @tablet {
+    color: @Darknavy;
+  }
   }
 }
 

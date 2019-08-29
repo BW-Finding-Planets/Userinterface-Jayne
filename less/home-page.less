@@ -6,6 +6,14 @@
     .layout(space-between, baseline);
     color: @Snow;
 
+    @media @tablet {
+      background-color: @Dimgray;
+      color: @Darknavy;
+      h2 {
+        color: @Darknavy;
+      }
+    }
+
     div {
       display:flex;
       @media @mobile {
@@ -48,13 +56,23 @@
       height: auto;
       display:block;
 
+      @media @tablet {
+        display: block;
+        height: 30vh;
+      }
+
       @media @mobile {
         display: none;
       }
+
     }
 
     #img2 {
       display:none;
+
+      @media @tablet {
+        display: none;
+      }
 
       @media @mobile {
         display: block;
@@ -64,9 +82,17 @@
 
   .CTA-box {
     background-color: @Darknavy;
+
+    @media @tablet {
+      .h2-box {
+        background-color: darken(@Dimgray, 20%);
+        border: none;
+      }
+    }
     
     @media @mobile {
       .h2-box{
+        background-color: @Darknavy;
         order: 0;
         width: 75%;
         padding: 1rem 0rem 0rem 2rem;
@@ -133,6 +159,10 @@
       top: 85%;
       left: 70%;
 
+      @media @tablet {
+        background-color: @Darknavy;
+      }
+
       @media @mobile {
         font-size: .5rem;
         .ctabutton();
@@ -149,10 +179,18 @@
       color: @Snow;
       letter-spacing: .15rem;
       padding-bottom: 1rem;
+
+      @media @tablet {
+        font-size: 3rem;
+      }
     }
 
     h4 {
       color: @Dimgray;
+      @media @tablet {
+        color: lighten(@Dimgray, 25%);
+        font-size: 1.8rem;
+      }
     }
   }
 
@@ -164,7 +202,6 @@
     padding: 0 2rem 3rem 4rem;
 
     @media @mobile {
-      // background-color: @Darknavy;
       display: flex;
       .column(flex-start, center);
     }
@@ -176,18 +213,23 @@
     .layout(space-around, center);
     flex-wrap: wrap;
     text-align: left;
-    color: @Dimgray;
+    color: lighten(@Dimgray, 25%);
     padding: 2rem;
 
     @media @mobile {
       display: flex;
-      color: @Snow;
+      text-align: center;
+      color: lighten(@Dimgray, 20%);
       flex-wrap: wrap;
       .layout(space-around, center);
     }
     
     .benefits-cta {
       color: @Snow;
+      @media @tablet {
+        font-size: 2.4rem;
+        color: lighten(@Coral, 15%);
+      }
     }
 
     .benefits-img {
@@ -207,12 +249,34 @@
 
     p {
       font-size: 1.5rem;
+      @media @tablet {
+        font-size: 1.8rem;
+        color: lighten(@Dimgray, 25%);
+      }
     }
+  }
+
+  #box-1 {
+    @media @tablet {
+      display: flex;
+      flex-direction: row-reverse;
+    } 
   }
 
   #box-2 {
     display: flex;
     flex-direction: row-reverse;
+    @media @tablet {
+      display: flex;
+      flex-direction: row;
+    } 
+  }
+
+  #box-3 {
+    @media @tablet {
+      display: flex;
+      flex-direction: row-reverse;
+    } 
   }
 
   img {
