@@ -88,16 +88,22 @@
     }
   }
 
+  .animate-h2 {
+    animation-name: text-shadow-pop-top;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+
+  }
+
   .CTA-box {
     background-color: @Darknavy;
-
     @media @tablet {
       .h2-box {
         background-color: darken(@Dimgray, 20%);
         border: none;
       }
-    }
-    
+    } 
     @media @mobile {
       .h2-box{
         background-color: @Darknavy;
