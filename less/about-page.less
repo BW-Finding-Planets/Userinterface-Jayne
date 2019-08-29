@@ -7,9 +7,6 @@
   color: @Snow;
   text-decoration: none;
 
-  @media @tablet {
-    background-color: @Dimgray;
-  }
 
   div {
     display:flex;
@@ -27,13 +24,22 @@
     color: @Snow;
     padding:1rem 1.5rem;
     text-decoration: none;
+    @media @tablet {
+      color: @Coral;
+    }
+    @media @mobile {
+      color: @Snow;
+    }
     
   }
   
   h2 {
     padding: 1.5rem;
     @media @tablet {
-      color: @Darknavy;
+      color: @Snow;
+    }
+    @media @mobile {
+      color: @Dimgray;
     }
   }
 }
@@ -63,6 +69,9 @@
   p {
     color: @Snow;
     letter-spacing: .1rem;
+    @media @mobile {
+      font-size: 1.1rem;
+    }
   }
 }
 
@@ -102,8 +111,22 @@
   .layout(space-between, center);
   margin-left: 2rem;
 
+  h4 {
+    font-size: 1.8rem;
+  }
+
   .github-icon {
-    width: 10%;
+    width: 15%;
+    @media @tablet {
+      width: 15%;
+    }
+    @media @mobile {
+      width: 20%;
+    }
+  }
+
+  @media @mobile {
+    padding-bottom: 1rem;
   }
 }
 
@@ -124,7 +147,16 @@
     }
   }
 
+  @media @mobile {
+    display: flex;
+    .column(center, center);
+    background-color: @Snow;
+    h4 {
+      color: @Darknavy;
+    }
+  }
 }
+
 .team-2 {
   padding: 2rem;
   background-color: @Snow;
@@ -139,6 +171,15 @@
     background-color: @Dimgray;
     h4 {
       color: @Snow;
+    }
+  }
+
+  @media @mobile {
+    display: flex;
+    .column(center, center);
+    background-color: @Snow;
+    h4 {
+      color: @Darknavy;
     }
   }
 
@@ -158,6 +199,12 @@ border-right: dotted .1rem @Darknavy;
   background-color: @Snow;
 }
 
+@media @mobile {
+  display: flex;
+  .column (center, center);
+  background-color: @Dimgray;
+}
+
   .job {
   color: @Snow;
   @media @tablet {
@@ -169,6 +216,9 @@ border-right: dotted .1rem @Darknavy;
   color: @Snow;
   @media @tablet {
     color: @Darknavy;
+  }
+  @media @mobile {
+    color: @Snow;
   }
   }
 }

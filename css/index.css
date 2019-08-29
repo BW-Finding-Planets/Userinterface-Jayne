@@ -172,11 +172,6 @@ p {
 nav {
   background-color: #242943;
 }
-@media (max-width: 800px) {
-  nav {
-    background-color: #696969;
-  }
-}
 nav a {
   font-size: 1.6rem;
   text-decoration: none;
@@ -203,11 +198,16 @@ footer {
 }
 @media (max-width: 800px) {
   .container .intro {
-    background-color: #696969;
+    background-color: #242943;
     color: #242943;
   }
   .container .intro h2 {
-    color: #242943;
+    color: #FFFAFA;
+  }
+}
+@media (max-width: 500px) {
+  .container .intro h2 {
+    color: #696969;
   }
 }
 .container .intro div {
@@ -235,8 +235,13 @@ footer {
   padding: 1rem 1.5rem;
   text-decoration: none;
 }
+@media (max-width: 800px) {
+  .container .intro h1 {
+    color: #FF7F50;
+  }
+}
 @media (max-width: 500px) {
-  .container .intro {
+  .container .intro h1 {
     padding: 1.5rem;
   }
 }
@@ -256,7 +261,6 @@ footer {
 @media (max-width: 800px) {
   .container .image-container #img1 {
     display: block;
-    height: 30vh;
   }
 }
 @media (max-width: 500px) {
@@ -450,6 +454,11 @@ footer {
 .container .benefits-boxes .benefits-img {
   width: 20%;
 }
+@media (max-width: 800px) {
+  .container .benefits-boxes .benefits-img {
+    width: 15%;
+  }
+}
 @media (max-width: 500px) {
   .container .benefits-boxes .benefits-img {
     width: 30%;
@@ -479,6 +488,12 @@ footer {
     flex-direction: row-reverse;
   }
 }
+@media (max-width: 500px) {
+  .container #box-1 {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .container #box-2 {
   display: flex;
   flex-direction: row-reverse;
@@ -489,10 +504,22 @@ footer {
     flex-direction: row;
   }
 }
+@media (max-width: 500px) {
+  .container #box-2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 @media (max-width: 800px) {
   .container #box-3 {
     display: flex;
     flex-direction: row-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .container #box-3 {
+    display: flex;
+    flex-direction: row;
   }
 }
 .container img {
@@ -507,11 +534,6 @@ footer {
   align-items: center;
   color: #FFFAFA;
   text-decoration: none;
-}
-@media (max-width: 800px) {
-  .container .about-intro {
-    background-color: #696969;
-  }
 }
 .container .about-intro div {
   display: flex;
@@ -530,12 +552,27 @@ footer {
   padding: 1rem 1.5rem;
   text-decoration: none;
 }
+@media (max-width: 800px) {
+  .container .about-intro h1 {
+    color: #FF7F50;
+  }
+}
+@media (max-width: 500px) {
+  .container .about-intro h1 {
+    color: #FFFAFA;
+  }
+}
 .container .about-intro h2 {
   padding: 1.5rem;
 }
 @media (max-width: 800px) {
   .container .about-intro h2 {
-    color: #242943;
+    color: #FFFAFA;
+  }
+}
+@media (max-width: 500px) {
+  .container .about-intro h2 {
+    color: #696969;
   }
 }
 .container .about-info {
@@ -563,6 +600,11 @@ footer {
 .container .about-info p {
   color: #FFFAFA;
   letter-spacing: 0.1rem;
+}
+@media (max-width: 500px) {
+  .container .about-info p {
+    font-size: 1.1rem;
+  }
 }
 .container .our-team {
   color: #FF7F50;
@@ -597,8 +639,26 @@ footer {
   align-items: center;
   margin-left: 2rem;
 }
+.container .team-member h4 {
+  font-size: 1.8rem;
+}
 .container .team-member .github-icon {
-  width: 10%;
+  width: 15%;
+}
+@media (max-width: 800px) {
+  .container .team-member .github-icon {
+    width: 15%;
+  }
+}
+@media (max-width: 500px) {
+  .container .team-member .github-icon {
+    width: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .container .team-member {
+    padding-bottom: 1rem;
+  }
 }
 .container .teamTess {
   padding: 2rem;
@@ -617,6 +677,18 @@ footer {
   }
   .container .teamTess h4 {
     color: #FFFAFA;
+  }
+}
+@media (max-width: 500px) {
+  .container .teamTess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFAFA;
+  }
+  .container .teamTess h4 {
+    color: #242943;
   }
 }
 .container .team-2 {
@@ -639,6 +711,18 @@ footer {
     color: #FFFAFA;
   }
 }
+@media (max-width: 500px) {
+  .container .team-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFAFA;
+  }
+  .container .team-2 h4 {
+    color: #242943;
+  }
+}
 .container .team-gray {
   padding: 2rem;
   background-color: #696969;
@@ -656,6 +740,15 @@ footer {
     background-color: #FFFAFA;
   }
 }
+@media (max-width: 500px) {
+  .container .team-gray {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #696969;
+  }
+}
 .container .team-gray .job {
   color: #FFFAFA;
 }
@@ -670,6 +763,11 @@ footer {
 @media (max-width: 800px) {
   .container .team-gray h4 {
     color: #242943;
+  }
+}
+@media (max-width: 500px) {
+  .container .team-gray h4 {
+    color: #FFFAFA;
   }
 }
 .how {
@@ -712,6 +810,16 @@ footer {
   font-size: 1.8rem;
   letter-spacing: 0.15rem;
   padding-bottom: 1rem;
+}
+@media (max-width: 800px) {
+  .howTo h5 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .howTo h5 {
+    font-size: 1.8rem;
+  }
 }
 .howTo-boxes {
   background-image: url("/images/benefits-boxes-background.jpg");
